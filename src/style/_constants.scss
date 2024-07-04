@@ -1,18 +1,25 @@
-$color-primary-extra-dark: #2D3440;
-$color-primary-dark: #565C66;
-//$background-color: $color-white;
-$color-primary-normal: #B9B9B9;
+$color-primary-extra-dark: rgba(45, 52, 64, 1);
+$color-primary-dark: rgba(86, 92, 102, 1);
+$color-primary-neutral: rgba(185, 185, 185, 1);
 $color-primary-light: #E7E7E7;
-$color-primary-extra-light: #FCFCFC;
+$color-primary-extra-light: rgba(252, 252, 252, 1);
 $color-primary-white: #FFFFFF;
 
-$color-secondary-extra-bright: #FF2F64;
+$color-secondary-extra-bright: rgba(255, 47, 100, 0.3);
 $color-secondary-bright: #FF4A78;
-$color-secondary-normal: #FF7799;
-$color-secondary-light: #FEAFC3;
+$color-secondary-neutral: #FF7799;
+$color-secondary-light: rgba(254, 175, 195, 1);
 $color-secondary-extra-light: #FFCBD8;
 $color-secondary-blue: #69A9FF;
 $color-secondary-yellow: #FCC850;
+
+$color-tertiary-extra-dark: $color-primary-extra-dark;
+$color-tertiary-background: rgba(252, 252, 252, 0.3);
+
+$color-primary-border: rgba(252, 252, 252, 0.4);
+$color-primary-border-shadow: rgba(45, 52, 64, 0.1);
+$color-secondary-border-shadow: $color-primary-border-shadow;
+$color-secondary-border-shadow-disabled: rgba(185, 185, 185, 0.3);
 
 $color-error: #ea5454;
 $color-warning: #fd912e;
