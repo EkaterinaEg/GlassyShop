@@ -1,3 +1,4 @@
+@use "constants" as constants;
 @mixin typography($size, $height, $weight, $style: normal, $color) {
   font-size: $size;
   line-height: $height;
@@ -6,42 +7,42 @@
   color: $color;
 }
 @mixin h1{
-  @include typography(36px,46px,900,normal,$primary-extra-dark)
+  @include typography(36px,46px,900,normal,constants.$primary-extra-dark)
 }
 @mixin h2{
-  @include typography(32px,46px,900,normal,$primary-extra-dark)
+  @include typography(32px,46px,900,normal,constants.$primary-extra-dark)
 }
 @mixin h3{
-  @include typography(24px,30px,700,normal,$primary-extra-dark)
+  @include typography(24px,30px,700,normal,constants.$primary-extra-dark)
 }
 @mixin h4{
-  @include typography(20px,24px,700,normal,$primary-extra-dark)
+  @include typography(20px,24px,700,normal,constants.$primary-extra-dark)
 }
 @mixin h5{
-  @include typography(18px,22px,700,normal,$primary-extra-dark)
+  @include typography(18px,22px,700,normal,constants.$primary-extra-dark)
 }
 @mixin p1{
-  @include typography(18px,24px,400,normal,$primary-extra-dark)
+  @include typography(18px,24px,400,normal,constants.$primary-extra-dark)
 }
 @mixin p2{
-  @include typography(16px,22px,400,normal,$primary-dark)
+  @include typography(16px,22px,400,normal,constants.$primary-dark)
 }
 @mixin p3{
-  @include typography(16px,20px,400,normal,$primary-dark)
+  @include typography(16px,20px,400,normal,constants.$primary-dark)
 }
 @mixin p3_bold{
-  @include typography(16px,20px,700,normal,$primary-dark)
+  @include typography(16px,20px,700,normal,constants.$primary-dark)
 }
 @mixin p4{
-  @include typography(16px,20px,400,normal,$primary-dark)
+  @include typography(16px,20px,400,normal,constants.$primary-dark)
 }
 @mixin text1{
-  @include typography(14px,20px,400,normal,$primary-dark)
+  @include typography(14px,20px,400,normal,constants.$primary-dark)
 }
 @mixin text1_bold{
-  @include typography(14px,20px,700,normal,$primary-dark)
+  @include typography(14px,20px,700,normal,constants.$primary-dark)
 }
 @mixin text2{
-  @include typography(12px,16px,400,normal,$primary-dark)
+  @include typography(12px,16px,400,normal,constants.$primary-dark)
 }
 
