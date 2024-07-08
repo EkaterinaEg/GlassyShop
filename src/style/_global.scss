@@ -1,0 +1,45 @@
+@use "./constants" as constants;
+@use "./mixins" as mixin;
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+h1 {
+  @include mixin.h1
+}
+
+h2 {
+  @include mixin.h2
+}
+h3 {
+  @include mixin.h3
+}
+h4 {
+  @include mixin.h4
+}
+
+h5 {
+  @include mixin.h5
+}
+
+
+
+

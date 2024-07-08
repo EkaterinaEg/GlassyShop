@@ -1,0 +1,18 @@
+@use "style/constants" as constants;
+@use "style/mixins" as mixin;
+@use "style/normalize";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  @include mixin.p2;
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  box-sizing: border-box;
+
+}
+
+
