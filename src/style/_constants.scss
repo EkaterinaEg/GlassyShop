@@ -1,19 +1,26 @@
-$color-primary-extra-dark: #2D3440;
-$color-primary-dark: #565C66;
-//$background-color: $color-white;
-$color-primary-normal: #B9B9B9;
-$color-primary-light: #E7E7E7;
-$color-primary-extra-light: #FCFCFC;
-$color-primary-white: #FFFFFF;
+//--primary-extra-dark: rgba(45, 52, 64, 1);
 
-$color-secondary-extra-bright: #FF2F64;
-$color-secondary-bright: #FF4A78;
-$color-secondary-normal: #FF7799;
-$color-secondary-light: #FEAFC3;
-$color-secondary-extra-light: #FFCBD8;
-$color-secondary-blue: #69A9FF;
-$color-secondary-yellow: #FCC850;
+$primary-extra-dark: rgba(45, 52, 64, 1);
+$primary-dark: rgba(86, 92, 102, 1);
+$primary-neutral: rgba(185, 185, 185, 1);
+$primary-light: rgba(231,231,231,1);
+$primary-extra-light: rgba(252, 252, 252, 1);
+$primary-lightest: rgba(255,255,255,1);
 
-$color-error: #ea5454;
-$color-warning: #fd912e;
-$color-success: #00e484;
+$secondary-extra-bright: rgba(255, 47, 100, 0.3);
+$secondary-bright: rgba(255,74,120,1);
+$secondary-neutral: rgba(255,119,153,1);
+$secondary-light: rgba(254, 175, 195, 1);
+$secondary-extra-light: rgba(255,203,216,1);
+
+$tertiary-extra-dark: $primary-extra-dark;
+$tertiary-background: rgba($primary-extra-light, 0.3);
+
+$primary-border: rgba($primary-extra-light, 0.4);
+$primary-border-shadow:  rgba($primary-extra-dark, 0.1);
+$secondary-border-shadow: $primary-border-shadow;
+$secondary-border-shadow-disabled: rgba($primary-neutral, 0.3);
+
+$error: rgba(234,84,84,1);
+$warning: rgba(253,145,46,1);
+$success: rgba(0,228,132,1);
