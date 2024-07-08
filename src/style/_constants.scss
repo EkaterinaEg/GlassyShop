@@ -17,15 +17,21 @@ $tertiary-extra-dark: $primary-extra-dark;
 $tertiary-background: rgba($primary-extra-light, 0.3);
 
 $primary-border: rgba($primary-extra-light, 0.4);
-$primary-border-shadow:  rgba($primary-extra-dark, 0.1);
-$secondary-border-shadow: $primary-border-shadow;
+
+
+
+//shadows:
+$border-shadow-small:  rgba($primary-extra-dark, 0.1) 0px 4px 12px;
+$border-shadow-medium: rgba($primary-extra-dark, 0.12) 0px 8px 16px;
+$border-shadow-large: rgba($primary-extra-dark, 0.12) 0px 15px 40px;
 $secondary-border-shadow-disabled: rgba($primary-neutral, 0.3);
 
+//status
 $error: rgba(234,84,84,1);
 $warning: rgba(253,145,46,1);
 $success: rgba(0,228,132,1);
 
-
+//media breakpoints
 $breakpoint-phone: 480px;
 $breakpoint-tablet: 768px;
 $breakpoint-laptop: 1024px;
