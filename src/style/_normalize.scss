@@ -17,7 +17,7 @@ $legacy_browser_support: false !default;
   * 2. Prevent iOS and IE text size adjust after device orientation change,
   *    without disabling user zoom.
   * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
-  *  `em` units.
+  *  `rem` units.
   */
 
 html {
@@ -131,7 +131,7 @@ a {
   */
 
 abbr[title] {
-  border-bottom: 1px dotted;
+  border-bottom: 0.063rem dotted;
 }
 
 /**
@@ -145,7 +145,7 @@ strong {
 
 @if $legacy_browser_support {
   blockquote {
-    margin: 1em 40px;
+    margin: 1rem 2.5rem;
   }
 }
 
@@ -217,11 +217,11 @@ sup {
 }
 
 sup {
-  top: -0.5em;
+  top: -0.5rem;
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -0.25rem;
 }
 
 @if $legacy_browser_support {
@@ -237,11 +237,11 @@ sub {
   menu,
   ol,
   ul {
-    *margin: 1em 0;
+    *margin: 1rem 0;
   }
 
   dd {
-    *margin: 0 0 0 40px;
+    *margin: 0 0 0 2.5rem;
   }
 
   /*
@@ -251,7 +251,7 @@ sub {
   menu,
   ol,
   ul {
-    *padding: 0 0 0 40px;
+    *padding: 0 0 0 2.5rem;
   }
 
   /*
@@ -296,7 +296,7 @@ svg:not(:root) {
   */
 
 figure {
-  margin: 1em 40px;
+  margin: 1rem 2.5rem;
 }
 
 /**
@@ -317,7 +317,7 @@ pre {
 }
 
 /**
-  * Address odd `em`-unit font size rendering in all browsers.
+  * Address odd `rem`-unit font size rendering in all browsers.
   * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
   */
 
@@ -329,7 +329,7 @@ samp {
   @if $legacy_browser_support {
     _font-family: "courier new", monospace;
   }
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 /* Forms
@@ -442,8 +442,8 @@ input[type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
   @if $legacy_browser_support {
-    *height: 13px; /* 3 */
-    *width: 13px; /* 3 */
+    *height: 0.813rem; /* 3 */
+    *width: 0.813rem; /* 3 */
   }
 }
 
@@ -484,9 +484,9 @@ input[type="search"]::-webkit-search-decoration {
   */
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  border: 0.063rem solid #c0c0c0;
+  margin: 0 0.125rem;
+  padding: 0.35rem 0.625rem 0.75rem;
 }
 
 /**
@@ -501,7 +501,7 @@ legend {
   padding: 0; /* 2 */
   @if $legacy_browser_support {
     white-space: normal; /* 3 */
-    *margin-left: -7px; /* 4 */
+    *margin-left: -0.438rem; /* 4 */
   }
 }
 
