@@ -1,0 +1,48 @@
+
+@mixin typography($size, $height, $weight, $style: normal, $color) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+  color: $color;
+}
+@mixin h1{
+  @include typography(2.25rem,2.875rem,900,normal,var(--primary-extra-dark))
+}
+@mixin h2{
+  @include typography(2rem,2.875rem,900,normal,var(--primary-extra-dark))
+}
+@mixin h3{
+  @include typography(1.5rem,1.875rem,700,normal,var(--primary-extra-dark))
+}
+@mixin h4{
+  @include typography(1.25rem,1.5rem,700,normal,var(--primary-extra-dark))
+}
+@mixin h5{
+  @include typography(1.125rem,1.375rem,700,normal,var(--primary-extra-dark))
+}
+@mixin p1{
+  @include typography(1.125rem,1.5rem,400,normal,var(--primary-extra-dark))
+}
+@mixin p2{
+  @include typography(1rem,1.375rem,400,normal,var(--primary-dark))
+}
+@mixin p3{
+  @include typography(1rem,1.25rem,400,normal,var(--primary-dark))
+}
+@mixin p3_bold{
+  @include typography(1rem,1.25rem,700,normal,var(--primary-dark))
+}
+@mixin p4{
+  @include typography(1rem,1.25rem,400,normal,var(--primary-dark))
+}
+@mixin text1{
+  @include typography(0.875rem,1.25rem,400,normal,var(--primary-dark))
+}
+@mixin text1_bold{
+  @include typography(0.875rem,1.25rem,700,normal,var(--primary-dark))
+}
+@mixin text2{
+  @include typography(0.75rem,1rem,400,normal,var(--primary-dark))
+}
+

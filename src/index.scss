@@ -1,0 +1,64 @@
+@use "style/constants" as constant;
+@use "style/fonts" as font;
+@use "style/mixins" as mixin;
+@use "style/normalize";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+
+  max-width: 73.125rem;
+  margin: 0 auto;
+  text-align: center;
+
+  box-sizing: border-box;
+
+  --primary-extra-dark: rgba(45, 52, 64, 1);
+  --primary-dark: rgba(86, 92, 102, 1);
+  --primary-neutral: rgba(185, 185, 185, 1);
+  --primary-light: rgba(231,231,231,1);
+  --primary-extra-light: rgba(252, 252, 252, 1);
+  --primary-lightest: rgba(255,255,255,1);
+
+  --secondary-extra-bright: rgba(255, 47, 100, 0.3);
+  --secondary-bright: rgba(255,74,120,1);
+  --secondary-neutral: rgba(255,119,153,1);
+  --secondary-light: rgba(254, 175, 195, 1);
+  --secondary-extra-light: rgba(255,203,216,1);
+
+  --tertiary-extra-dark: var(--primary-extra-dark);
+  --tertiary-background: rgba(var(--primary-extra-light), 0.3);
+
+  --primary-border: rgba(var(--primary-extra-light), 0.4);
+
+  //shadows:
+  --border-shadow-small:  rgba(var(--primary-extra-dark), 0.1) 0rem 0.25rem 0.75rem;
+  --border-shadow-medium: rgba(var(--primary-extra-dark), 0.12) 0rem 0.5rem 1rem;
+  --border-shadow-large: rgba(var(--primary-extra-dark), 0.12) 0rem 0.938rem 2.5rem;
+  --secondary-border-shadow-disabled: rgba(var(--primary-neutral), 0.3);
+
+  //status
+  --error: rgba(234,84,84,1);
+  --warning: rgba(253,145,46,1);
+  --success: rgba(0,228,132,1);
+
+  h1 {
+    @include mixin.h1
+  }
+
+  h2 {
+    @include mixin.h2
+  }
+  h3 {
+    @include mixin.h3
+  }
+  h4 {
+    @include mixin.h4
+  }
+
+  h5 {
+    @include mixin.h5
+  }
+}
+
+
