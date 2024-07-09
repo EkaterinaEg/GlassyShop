@@ -1,34 +1,3 @@
-$primary-extra-dark: rgba(45, 52, 64, 1);
-$primary-dark: rgba(86, 92, 102, 1);
-$primary-neutral: rgba(185, 185, 185, 1);
-$primary-light: rgba(231,231,231,1);
-$primary-extra-light: rgba(252, 252, 252, 1);
-$primary-lightest: rgba(255,255,255,1);
-
-$secondary-extra-bright: rgba(255, 47, 100, 0.3);
-$secondary-bright: rgba(255,74,120,1);
-$secondary-neutral: rgba(255,119,153,1);
-$secondary-light: rgba(254, 175, 195, 1);
-$secondary-extra-light: rgba(255,203,216,1);
-
-$tertiary-extra-dark: $primary-extra-dark;
-$tertiary-background: rgba($primary-extra-light, 0.3);
-
-$primary-border: rgba($primary-extra-light, 0.4);
-
-
-
-//shadows:
-$border-shadow-small:  rgba($primary-extra-dark, 0.1) 0px 4px 12px;
-$border-shadow-medium: rgba($primary-extra-dark, 0.12) 0px 8px 16px;
-$border-shadow-large: rgba($primary-extra-dark, 0.12) 0px 15px 40px;
-$secondary-border-shadow-disabled: rgba($primary-neutral, 0.3);
-
-//status
-$error: rgba(234,84,84,1);
-$warning: rgba(253,145,46,1);
-$success: rgba(0,228,132,1);
-
 //media breakpoints
 $breakpoint-phone: 480px;
 $breakpoint-tablet: 768px;
