@@ -1488,16 +1488,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chromatic-com/storybook@npm:1.6.0":
-  version: 1.6.0
-  resolution: "@chromatic-com/storybook@npm:1.6.0"
+"@chromatic-com/storybook@npm:1.6.1":
+  version: 1.6.1
+  resolution: "@chromatic-com/storybook@npm:1.6.1"
   dependencies:
     chromatic: "npm:^11.4.0"
     filesize: "npm:^10.0.12"
     jsonfile: "npm:^6.1.0"
     react-confetti: "npm:^6.1.0"
     strip-ansi: "npm:^7.1.0"
-  checksum: 10c0/b9b6d5e8c5ed9fd0e065c0f40ef9c8269f64436e098255e141dcf5399552c9322c5034a9c32b7af6b324110cd3c8f0879be39060db86d504dd2a4dea39afa166
+  checksum: 10c0/411a2c9f44542c4940e6452846f1c2b71f4529640cefcf60396c1eb0a16cd2a4d27ba648523c73a7ca9b5b64f2a67b19159281add6730d0a237336a3856c8f37
   languageName: node
   linkType: hard
 
@@ -1986,10 +1986,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jridgewell/sourcemap-codec@npm:^1.4.10, @jridgewell/sourcemap-codec@npm:^1.4.13, @jridgewell/sourcemap-codec@npm:^1.4.14, @jridgewell/sourcemap-codec@npm:^1.4.15":
+"@jridgewell/sourcemap-codec@npm:^1.4.10, @jridgewell/sourcemap-codec@npm:^1.4.14":
   version: 1.4.15
   resolution: "@jridgewell/sourcemap-codec@npm:1.4.15"
   checksum: 10c0/0c6b5ae663087558039052a626d2d7ed5208da36cfd707dcc5cea4a07cfc918248403dcb5989a8f7afaf245ce0573b7cc6fd94c4a30453bd10e44d9363940ba5
+  languageName: node
+  linkType: hard
+
+"@jridgewell/sourcemap-codec@npm:^1.4.13, @jridgewell/sourcemap-codec@npm:^1.4.15":
+  version: 1.5.0
+  resolution: "@jridgewell/sourcemap-codec@npm:1.5.0"
+  checksum: 10c0/2eb864f276eb1096c3c11da3e9bb518f6d9fc0023c78344cdc037abadc725172c70314bdb360f2d4b7bffec7f5d657ce006816bc5d4ecb35e61b66132db00c18
   languageName: node
   linkType: hard
 
@@ -3587,11 +3594,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 20.14.9
-  resolution: "@types/node@npm:20.14.9"
+  version: 20.14.10
+  resolution: "@types/node@npm:20.14.10"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10c0/911ffa444dc032897f4a23ed580c67903bd38ea1c5ec99b1d00fa10b83537a3adddef8e1f29710cbdd8e556a61407ed008e06537d834e48caf449ce59f87d387
+  checksum: 10c0/0b06cff14365c2d0085dc16cc8cbea5c40ec09cfc1fea966be9eeecf35562760bfde8f88e86de6edfaf394501236e229d9c1084fad04fb4dec472ae245d8ae69
   languageName: node
   linkType: hard
 
@@ -3982,7 +3989,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "GlassyShop@workspace:."
   dependencies:
-    "@chromatic-com/storybook": "npm:1.6.0"
+    "@chromatic-com/storybook": "npm:1.6.1"
     "@storybook/addon-essentials": "npm:^8.1.11"
     "@storybook/addon-interactions": "npm:^8.1.11"
     "@storybook/addon-links": "npm:^8.1.11"
@@ -4439,7 +4446,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.22.2, browserslist@npm:^4.23.0":
+"browserslist@npm:^4.22.2":
   version: 4.23.1
   resolution: "browserslist@npm:4.23.1"
   dependencies:
@@ -4450,6 +4457,20 @@ __metadata:
   bin:
     browserslist: cli.js
   checksum: 10c0/eb47c7ab9d60db25ce2faca70efeb278faa7282a2f62b7f2fa2f92e5f5251cf65144244566c86559419ff4f6d78f59ea50e39911321ad91f3b27788901f1f5e9
+  languageName: node
+  linkType: hard
+
+"browserslist@npm:^4.23.0":
+  version: 4.23.2
+  resolution: "browserslist@npm:4.23.2"
+  dependencies:
+    caniuse-lite: "npm:^1.0.30001640"
+    electron-to-chromium: "npm:^1.4.820"
+    node-releases: "npm:^2.0.14"
+    update-browserslist-db: "npm:^1.1.0"
+  bin:
+    browserslist: cli.js
+  checksum: 10c0/0217d23c69ed61cdd2530c7019bf7c822cd74c51f8baab18dd62457fed3129f52499f8d3a6f809ae1fb7bb3050aa70caa9a529cc36c7478427966dbf429723a5
   languageName: node
   linkType: hard
 
@@ -4524,7 +4545,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001629":
+"caniuse-lite@npm:^1.0.30001629, caniuse-lite@npm:^1.0.30001640":
   version: 1.0.30001640
   resolution: "caniuse-lite@npm:1.0.30001640"
   checksum: 10c0/d87fce999e52c354029893a23887d2e48ac297e3af55bd14161fcafdd711f97bdb2649c79d2d3049e628603cb59bc4257ca2961644b0b8d206e7b7dd126d37ea
@@ -4627,8 +4648,8 @@ __metadata:
   linkType: hard
 
 "chromatic@npm:^11.4.0":
-  version: 11.5.4
-  resolution: "chromatic@npm:11.5.4"
+  version: 11.5.5
+  resolution: "chromatic@npm:11.5.5"
   peerDependencies:
     "@chromatic-com/cypress": ^0.*.* || ^1.0.0
     "@chromatic-com/playwright": ^0.*.* || ^1.0.0
@@ -4641,7 +4662,7 @@ __metadata:
     chroma: dist/bin.js
     chromatic: dist/bin.js
     chromatic-cli: dist/bin.js
-  checksum: 10c0/39843e6e2d56fc041fa9163bea677e3b19657d08128c4366a71b9b312b7b1a879d21b248a8cad46fbc9899085143c3d72ed2bb62a3b49a20f22dae7a03d46172
+  checksum: 10c0/3d812122548f9c29ab7116f7054e03cbf523b30ddde7e3142017cd23c42b6b99b3023e0146ef3afcfe4245a8cbb2ed97cedecca4e2cf9e5f6e8666db84a827d4
   languageName: node
   linkType: hard
 
@@ -5183,6 +5204,13 @@ __metadata:
   version: 1.4.816
   resolution: "electron-to-chromium@npm:1.4.816"
   checksum: 10c0/1a84bc42234484cbc5e8b521de57fd3ab9984a2111d8605eab26b3525f382c0c7b83b45bf8b34e5fa4a730cd183fef5dffa4a0627754c7f4fb0aae9cb3c16b37
+  languageName: node
+  linkType: hard
+
+"electron-to-chromium@npm:^1.4.820":
+  version: 1.4.821
+  resolution: "electron-to-chromium@npm:1.4.821"
+  checksum: 10c0/6220c057f18e19fa4c59bf66edf6fcd41259d376bc3d4023451260d154990f361634fc0efd9c8603f76b618b7163637f7d58d54570a1b30618af6971140ffbdd
   languageName: node
   linkType: hard
 
@@ -5911,9 +5939,9 @@ __metadata:
   linkType: hard
 
 "filesize@npm:^10.0.12":
-  version: 10.1.2
-  resolution: "filesize@npm:10.1.2"
-  checksum: 10c0/1f3a81231047924e3c6181ef1596bf56c83cc65e407130d9b83a3c6a603894261dce89013d15c6e3e4d636845128360c21c64c4700a243f0d8662e168c2fd781
+  version: 10.1.4
+  resolution: "filesize@npm:10.1.4"
+  checksum: 10c0/b02a792da0da66fce5525566691369db6f0fadf5407b3626ca14821998dfaec65cf4a69fc3ca3ae999bf963e4afa19a8a787996f935c508506cccff3cc075faf
   languageName: node
   linkType: hard
 
@@ -6020,9 +6048,9 @@ __metadata:
   linkType: hard
 
 "flow-parser@npm:0.*":
-  version: 0.239.0
-  resolution: "flow-parser@npm:0.239.0"
-  checksum: 10c0/2417373567248921d60436c898a1742641112af9cbcf4a8bd3596e84c185887a98288520d3d722ce38c9502dbada516050dcc202f8d2f9ffb8cd0b2477e3a3db
+  version: 0.239.1
+  resolution: "flow-parser@npm:0.239.1"
+  checksum: 10c0/a95186e47cce6e0f401845eae8ec863480817b879f18b34564af51efd545b04193e2c4a0d429a5961d34e4c5f02c213adda008a15ac034bbe4ca0a4e2a5773c0
   languageName: node
   linkType: hard
 
@@ -6255,7 +6283,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^10.0.0, glob@npm:^10.2.2, glob@npm:^10.3.10":
+"glob@npm:^10.0.0":
+  version: 10.4.5
+  resolution: "glob@npm:10.4.5"
+  dependencies:
+    foreground-child: "npm:^3.1.0"
+    jackspeak: "npm:^3.1.2"
+    minimatch: "npm:^9.0.4"
+    minipass: "npm:^7.1.2"
+    package-json-from-dist: "npm:^1.0.0"
+    path-scurry: "npm:^1.11.1"
+  bin:
+    glob: dist/esm/bin.mjs
+  checksum: 10c0/19a9759ea77b8e3ca0a43c2f07ecddc2ad46216b786bb8f993c445aee80d345925a21e5280c7b7c6c59e860a0154b84e4b2b60321fea92cd3c56b4a7489f160e
+  languageName: node
+  linkType: hard
+
+"glob@npm:^10.2.2, glob@npm:^10.3.10":
   version: 10.4.2
   resolution: "glob@npm:10.4.2"
   dependencies:
@@ -8387,11 +8431,11 @@ __metadata:
   linkType: hard
 
 "qs@npm:^6.10.0":
-  version: 6.12.2
-  resolution: "qs@npm:6.12.2"
+  version: 6.12.3
+  resolution: "qs@npm:6.12.3"
   dependencies:
     side-channel: "npm:^1.0.6"
-  checksum: 10c0/d431fe6914aea026794c047b9c5ac5d29e96cc13dc14f3ca838f5f3061b0f1ed435d3f616508bc0e8a64fc29d13359f08bfe723aabc5f80f36d11057b2de6ebf
+  checksum: 10c0/243ddcc8f49dab78fc51041f7f64c500b47c671c45a101a8aca565d8537cb562921da7ef1a831b4a7051596ec88bb35a0d5e25a240025e8b32c6bfb69f00bf2f
   languageName: node
   linkType: hard
 
@@ -9938,7 +9982,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"update-browserslist-db@npm:^1.0.16":
+"update-browserslist-db@npm:^1.0.16, update-browserslist-db@npm:^1.1.0":
   version: 1.1.0
   resolution: "update-browserslist-db@npm:1.1.0"
   dependencies:
