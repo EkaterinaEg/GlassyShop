@@ -1,0 +1,45 @@
+@use "/src/style/mixins" as *;
+
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 1.625rem;
+
+  &_primary {
+  background-color: var(--primary-extra-light);
+  @include typography(1rem, 1.25rem, 700, normal, var(--primary-extra-dark));
+  border: 0.25rem solid var(--primary-border);
+  box-shadow: var(--border-shadow-small);
+
+  &:disabled {
+    @include typography(1rem, 1.25rem, 700, normal, var(--primary-neutral));
+    background-color: var(--primary-light);
+  }
+}
+
+&_secondary {
+  color: var(--primary-extra-light);
+  background-color: var(--secondary-extra-bright);
+  border: 0.25rem solid var(--secondary-extra-bright);
+  box-shadow: var(--border-shadow-small);
+  @include typography(1rem,1.25rem, 700, normal, var(--primary-extra-light));
+  &:disabled {
+    @include typography(1rem, 1.25rem, 700, normal, var(--primary-dark));
+    background-color: var(--primary-neutral);
+    border: 0.25rem solid var(--secondary-border-disabled);
+  }
+}
+
+&_tertiary {
+    padding: 0.5rem 2rem;
+    border-radius: 1.25rem;
+    background-color: var(--tertiary-background);
+    border: 0.125rem solid var(--primary-extra-light);
+    @include typography(0.875rem,1.25rem, 700, normal, var(--tertiary-extra-dark));
+
+    &:disabled {
+      opacity: 0.4;
+    }
+  }
+
+
+}

@@ -1,7 +1,8 @@
 import './index.scss';
+import { Button } from './components/atoms/Button/Button.tsx';
 
 function App() {
-  return <button>test</button>;
+  return <Button type='primary'>test</Button>;
 }
 
 export default App;

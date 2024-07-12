@@ -30,12 +30,13 @@
   --tertiary-background: rgba(var(--primary-extra-light), 0.3);
 
   --primary-border: rgba(var(--primary-extra-light), 0.4);
+  --secondary-border-disabled: rgba(var(--primary-neutral), 0.3);
 
   //shadows:
   --border-shadow-small:  rgba(var(--primary-extra-dark), 0.1) 0rem 0.25rem 0.75rem;
   --border-shadow-medium: rgba(var(--primary-extra-dark), 0.12) 0rem 0.5rem 1rem;
   --border-shadow-large: rgba(var(--primary-extra-dark), 0.12) 0rem 0.938rem 2.5rem;
-  --secondary-border-shadow-disabled: rgba(var(--primary-neutral), 0.3);
+
 
   //status
   --error: rgba(234,84,84,1);
