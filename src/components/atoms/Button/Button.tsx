@@ -4,7 +4,7 @@ import React from 'react';
 
 import './Button.scss';
 
-interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /** Type of the component **/
   type: 'primary' | 'secondary' | 'tertiary';
   /** state loading or not **/
