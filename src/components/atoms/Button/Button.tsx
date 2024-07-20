@@ -10,7 +10,7 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /** state loading or not **/
   loading?: boolean;
   disabled?: boolean;
-  /** Adornment to be displayed at the end of the button **/
+  /** Adornment is displayed at the end of the button **/
   adornment?: React.ReactNode;
   children: React.ReactNode;
   onClick?: () => void;

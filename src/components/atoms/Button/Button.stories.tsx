@@ -1,31 +1,77 @@
-import type { HTMLAttributes } from 'react';
-import React from 'react';
-import classNames from 'classnames';
+import { Meta, StoryObj } from '@storybook/react';
+import { ComponentProps } from 'react';
 
+import { fn } from '@storybook/test';
+import { Button } from './Button.tsx';
 import './Button.scss';
 
-interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  /** Type and state of the component*/
-  type: 'primary' | 'secondary' | 'tertiary';
-  state?: 'disabled' | 'loading';
-  children: React.ReactNode;
-  onClick?: () => void;
-}
+// type StoryProps = ComponentProps<typeof Button> & {
+//   buttonText: string;
+// };
 
-export const Button = ({ type, state, onClick, children }: ButtonProps) => {
-  const buttonClass = classNames({
-    btn_primary: type === 'primary',
-    'btn_primary btn_primary_disabled': type === 'primary' && state === 'disabled',
-    'btn_primary btn_primary_loading': type === 'primary' && state === 'loading',
-    btn_secondary: type === 'secondary',
-    'btn_secondary btn_secondary_disabled': type === 'secondary' && state === 'disabled',
-    'btn_secondary btn_secondary_loading': type === 'secondary' && state === 'loading',
-    btn_tertiary: type === 'tertiary',
-    'btn_tertiary btn_tertiary_disabled': type === 'tertiary' && state === 'disabled',
-  });
-  return (
-    <button className={buttonClass} onClick={onClick}>
-      {children}
-    </button>
-  );
+type StoryProps = ComponentProps<typeof Button>;
+const meta: Meta<StoryProps> = {
+  title: 'Atoms/Button',
+  component: Button,
+  argTypes: {
+    //   type: {
+    //     options: ['primary', 'secondary', 'tertiary'],
+    //     control: { type: 'select' },
+    //   },
+
+    loading: { control: 'boolean' },
+    disabled: { control: 'boolean' },
+    adornment: { control: 'text' },
+  },
+  args: { onClick: fn() },
+};
+
+export default meta;
+
+type Story = StoryObj<StoryProps>;
+export const Buttons: Story = {
+  /** Default type for button **/
+  args: {
+    // buttonText: 'Button',
+    type: 'primary',
+  },
+  render: ({ ...args }) => {
+    return (
+      <>
+        <div className='secondary_buttons'>
+          <Button {...args} type='primary'>
+            Primary
+          </Button>
+          <Button {...args} type='primary' disabled={true}>
+            Primary disabled
+          </Button>
+          <Button {...args} type='primary' loading={true}>
+            Primary loading
+          </Button>
+        </div>
+        <div className='secondary_buttons'>
+          <Button {...args} type='secondary'>
+            Secondary
+          </Button>
+          <Button {...args} type='secondary' disabled={true}>
+            Secondary disabled
+          </Button>
+          <Button {...args} type='secondary' loading={true}>
+            Secondary loading
+          </Button>
+        </div>
+        <div className='tertiary_buttons'>
+          <Button {...args} type='tertiary'>
+            Tertiary
+          </Button>
+          <Button {...args} type='tertiary' disabled={true}>
+            Tertiary disabled
+          </Button>
+          <Button {...args} type='tertiary' loading={true}>
+            Tertiary loading
+          </Button>
+        </div>
+      </>
+    );
+  },
 };
