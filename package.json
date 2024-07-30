@@ -15,14 +15,14 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "1.6.1",
-    "@storybook/addon-essentials": "^8.1.11",
-    "@storybook/addon-interactions": "^8.1.11",
-    "@storybook/addon-links": "^8.1.11",
-    "@storybook/addon-onboarding": "^8.1.11",
-    "@storybook/blocks": "^8.1.11",
-    "@storybook/react": "^8.1.11",
-    "@storybook/react-vite": "^8.1.11",
-    "@storybook/test": "^8.1.11",
+    "@storybook/addon-essentials": "8.2.5",
+    "@storybook/addon-interactions": "8.2.5",
+    "@storybook/addon-links": "8.2.5",
+    "@storybook/addon-onboarding": "8.2.5",
+    "@storybook/blocks": "8.2.5",
+    "@storybook/react": "8.2.5",
+    "@storybook/react-vite": "8.2.5",
+    "@storybook/test": "8.2.5",
     "@types/react": "^18.3.3",
     "@types/react-dom": "18.3.0",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
@@ -38,9 +38,9 @@
     "i18next": "^23.11.5",
     "prettier": "3.2.2",
     "react-i18next": "^14.1.2",
-    "storybook": "^8.1.11",
+    "storybook": "8.2.5",
     "typescript": "5.5.3",
-    "vite": "^5.0.8"
+    "vite": "5.3.4"
   },
   "config": {
     "cz-customizable": {

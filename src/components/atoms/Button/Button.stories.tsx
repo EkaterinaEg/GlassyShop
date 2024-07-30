@@ -1,12 +1,12 @@
-import { Meta } from '@storybook/react';
-
+import { Preloader } from '../Preloader/Preloader';
 import { Button, ButtonProps } from './Button.tsx';
 import './Button.scss';
+import { action } from '@storybook/addon-actions';
 
 export default {
   title: 'Atoms/Button',
   component: Button,
-} as Meta;
+};
 
 export const Demo = () => {
   return (
@@ -16,7 +16,7 @@ export const Demo = () => {
         <Button type='primary' disabled>
           Primary disabled
         </Button>
-        <Button type='primary' loading>
+        <Button type='primary' loading adornment={<Preloader />}>
           Primary loading
         </Button>
       </div>
@@ -41,19 +41,23 @@ export const Demo = () => {
     </>
   );
 };
-
-export const Playground = ({
-  text,
-  ...args
-}: ButtonProps & {
+interface IPlayground extends ButtonProps {
   text: string;
-}) => {
-  console.log(args);
-  return <Button {...args}>{text}</Button>;
+  adornment: boolean;
+}
+
+export const Playground = ({ text, adornment, ...args }: IPlayground) => {
+  return (
+    <Button {...args} onClick={action('onClick')} adornment={adornment ? <Preloader /> : undefined}>
+      {text}
+    </Button>
+  );
 };
 Playground.argTypes = {
-  text: { control: 'text', defaultValue: 'Button' },
-  type: { control: 'inline-radio', options: ['primary', 'secondary', 'tertiary'], defaultValue: 'primary' },
-  disabled: { control: 'boolean', defaultValue: false },
-  loading: { control: 'boolean', defaultValue: false },
+  text: { control: 'text', description: 'testsdsdcsdcds' },
+  type: { control: 'inline-radio', options: ['primary', 'secondary', 'tertiary'] },
+  children: { table: { disable: true } }, // remove children from the list of controls
+  onClick: { table: { disable: true } },
+  adornment: { control: 'boolean' },
 };
+Playground.args = { text: 'test', type: 'primary', adornment: true };
