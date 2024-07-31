@@ -7,8 +7,9 @@ import './Button.scss';
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /** Type of the component */
   type: 'primary' | 'secondary' | 'tertiary';
-  /** state loading or not */
+  /** State loading or not */
   loading?: boolean;
+  /** disabled or not */
   disabled?: boolean;
   /** Adornment is displayed at the end of the button */
   adornment?: React.ReactNode;

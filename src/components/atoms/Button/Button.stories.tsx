@@ -2,7 +2,6 @@ import { Preloader } from '../Preloader/Preloader';
 import { Button, ButtonProps } from './Button.tsx';
 import './Button.scss';
 import { action } from '@storybook/addon-actions';
-
 export default {
   title: 'Atoms/Button',
   component: Button,
@@ -11,7 +10,7 @@ export default {
 export const Demo = () => {
   return (
     <>
-      <div className='secondary_buttons'>
+      <div className='primary_buttons'>
         <Button type='primary'>Primary</Button>
         <Button type='primary' disabled>
           Primary disabled
@@ -25,7 +24,7 @@ export const Demo = () => {
         <Button type='secondary' disabled>
           Secondary disabled
         </Button>
-        <Button type='secondary' loading>
+        <Button type='secondary' loading adornment={<Preloader />}>
           Secondary loading
         </Button>
       </div>
@@ -34,7 +33,7 @@ export const Demo = () => {
         <Button type='tertiary' disabled>
           Tertiary disabled
         </Button>
-        <Button type='tertiary' loading>
+        <Button type='tertiary' loading adornment={<Preloader />}>
           Tertiary loading
         </Button>
       </div>
