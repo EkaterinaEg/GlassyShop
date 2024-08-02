@@ -16,10 +16,10 @@
   display: block;
   width: 0.5rem;
   height: 0.5rem;
-  margin: 8px;
+  margin: 0.5rem;
   border-radius: 50%;
-  border: 2px solid #3974ec;
-  border-color: #3974ec transparent #3974ec transparent;
+  border: 0.125rem solid var(--adornment);
+  border-color: var(--adornment) transparent var(--adornment) transparent;
   animation: ring_anim 2.2s linear infinite;
 }
 @keyframes ring_anim {
