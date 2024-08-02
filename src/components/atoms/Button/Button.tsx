@@ -13,7 +13,6 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   disabled?: boolean;
   /** Adornment is displayed at the end of the button */
   adornment?: React.ReactNode;
-  children: React.ReactNode;
   onClick?: () => void;
 }
 

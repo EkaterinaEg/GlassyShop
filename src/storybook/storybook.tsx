@@ -1,14 +1,11 @@
-// import type { HTMLAttributes } from 'react';
-// import classNames from 'classnames';
-import React from 'react';
 import './storybook.scss';
+import { PropsWithChildren } from 'react';
 
-interface StorybookProps {
-  children: React.ReactNode;
+interface StorybookProps extends PropsWithChildren {
   title: string;
 }
 
-export const Storybook = ({ children, title }: StorybookProps) => {
+export const Storybook = ({ title, children }: StorybookProps) => {
   return (
     <div className='storybook-page'>
       <h2 className='heading'>{title}</h2>
