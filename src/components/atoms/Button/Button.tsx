@@ -17,10 +17,10 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   onClick?: () => void;
 }
 
-export const Button = ({ type, onClick, children, disabled, adornment }: ButtonProps) => {
+export const Button = ({ type, children, disabled, adornment }: ButtonProps) => {
   const buttonClass = classNames('btn', `btn_${type}`);
   return (
-    <button className={buttonClass} onClick={onClick} disabled={disabled}>
+    <button className={buttonClass} disabled={disabled}>
       {children}
       {adornment && <span className='btn__adornment'>{adornment}</span>}
     </button>
