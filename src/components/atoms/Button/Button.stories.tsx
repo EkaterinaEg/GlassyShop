@@ -1,7 +1,9 @@
 import { Preloader } from '../Preloader/Preloader';
 import { Button, ButtonProps } from './Button.tsx';
+import { Storybook } from '../../../storybook/storybook.tsx';
 import './Button.scss';
 import { action } from '@storybook/addon-actions';
+
 export default {
   title: 'Atoms/Button',
   component: Button,
@@ -9,8 +11,8 @@ export default {
 
 export const Demo = () => {
   return (
-    <>
-      <div className='primary_buttons'>
+    <Storybook title='Buttons'>
+      <div className='buttons-container primary_buttons'>
         <Button type='primary'>Primary</Button>
         <Button type='primary' disabled>
           Primary disabled
@@ -19,7 +21,7 @@ export const Demo = () => {
           Primary loading
         </Button>
       </div>
-      <div className='secondary_buttons'>
+      <div className='buttons-container secondary_buttons'>
         <Button type='secondary'>Secondary</Button>
         <Button type='secondary' disabled>
           Secondary disabled
@@ -28,7 +30,7 @@ export const Demo = () => {
           Secondary loading
         </Button>
       </div>
-      <div className='tertiary_buttons'>
+      <div className='buttons-container tertiary_buttons'>
         <Button type='tertiary'>Tertiary</Button>
         <Button type='tertiary' disabled>
           Tertiary disabled
@@ -37,7 +39,7 @@ export const Demo = () => {
           Tertiary loading
         </Button>
       </div>
-    </>
+    </Storybook>
   );
 };
 interface IPlayground extends ButtonProps {
