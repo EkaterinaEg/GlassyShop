@@ -1,0 +1,32 @@
+.preloader-wrapper{
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100%;
+
+}
+.ring_small {
+  width: 0.7rem;
+  height: 0.7rem;
+  display: grid;
+  place-content: center;
+}
+.ring_small:after {
+  content: " ";
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+  border: 0.125rem solid var(--adornment);
+  border-color: var(--adornment) transparent var(--adornment) transparent;
+  animation: ring_anim 2.2s linear infinite;
+}
+@keyframes ring_anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
